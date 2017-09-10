@@ -10,7 +10,7 @@ GPL v2 license.
 
 # Usage
 
-## Pull the SSLyze image:
+## Pull SSLyze image
 
 ```
 $ docker pull andreburgaud/sslyze:latest
