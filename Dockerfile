@@ -13,6 +13,6 @@ RUN apk add --no-cache \
   libffi-dev \
   openssl-dev
 
-RUN pip install sslyze
+RUN pip install sslyze==1.1.4
 
 CMD "sh"
