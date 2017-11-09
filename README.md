@@ -30,6 +30,6 @@ $ docker run -it --rm andreburgaud/sslyze:latest sslyze --regular google.com
 
 ```
 $ docker run -it --rm andreburgaud/sslyze:latest
-# sslyze --help
-# sslyze --regular google.com
+/ # sslyze --help
+/ # sslyze --regular google.com
 ```
