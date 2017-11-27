@@ -1,17 +1,17 @@
-FROM       alpine:3.6
-LABEL      sslyze.version=1.1.5
-LABEL      python.version=2.7.13
+FROM python:3-slim-stretch
 
-MAINTAINER Andre Burgaud
+ENV SSLYZE_VERSION 1.2.0
 
-RUN apk add --no-cache py-pip python openssl
-RUN apk --no-cache add --virtual build-dependencies \
-      python-dev \
-      gcc \
-      musl-dev \
-      libffi-dev \
-      openssl-dev && \
-    pip install sslyze==1.1.5 && \
-    apk del build-dependencies
+LABEL python.version=3.6.3 \
+      sslyze.version=$SSLYZE_VERSION \
+      maintainer="andre.burgaud@gmail.com"
 
-CMD "sh"
+RUN apt-get update && apt-get upgrade -y && \
+    apt-get install -y gcc && \
+    apt-get install -y libssl-dev && \
+    apt-get install -y libffi-dev && \
+    pip install sslyze==$SSLYZE_VERSION && \
+    apt-get remove -y gcc libssl-dev libffi-dev && \
+    apt-get autoremove -y && apt-get clean
+
+CMD "bash"
