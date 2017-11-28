@@ -7,11 +7,10 @@ LABEL python.version=3.6.3 \
       maintainer="andre.burgaud@gmail.com"
 
 RUN apt-get update && apt-get upgrade -y && \
-    apt-get install -y gcc && \
-    apt-get install -y libssl-dev && \
-    apt-get install -y libffi-dev && \
+    BUILD_DEPENDENCIES='gcc libssl-dev libffi-dev' && \
+    apt-get install -yqq $BUILD_DEPENDENCIES && \
     pip install sslyze==$SSLYZE_VERSION && \
-    apt-get remove -y gcc libssl-dev libffi-dev && \
-    apt-get autoremove -y && apt-get clean
+    apt-get purge --auto-remove -yqq $BUILD_DEPENDENCIES && \
+    apt-get clean
 
 CMD "bash"
