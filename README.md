@@ -3,9 +3,7 @@
 Docker project holding a Dockerfile for an SSLyze container.
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/andreburgaud/sslyze.svg)](https://hub.docker.com/r/andreburgaud/sslyze/)
-
 [![Docker Automated Build](https://img.shields.io/docker/automated/andreburgaud/sslyze.svg)](https://hub.docker.com/r/andreburgaud/sslyze/)
-
 [![Docker Build Status](https://img.shields.io/docker/build/andreburgaud/sslyze.svg)](https://hub.docker.com/r/andreburgaud/sslyze/)
 
 # SSLyze
