@@ -9,8 +9,9 @@ Docker project holding a Dockerfile for an SSLyze container.
 # SSLyze
 
 SSLyze is a fast and powerful SSL/TLS server scanning library. it is available
-on GitHub at https://github.com/nabla-c0d3/sslyze. It is distributed under a
-GPL v2 license.
+on GitHub at https://github.com/nabla-c0d3/sslyze. It is distributed under the
+AGPL license since version 1.3.2 (was distributed under the GPL v2 license until
+version 1.3.1).
 
 # Pull SSLyze image
 
@@ -36,5 +37,5 @@ $ docker run -it --rm andreburgaud/sslyze sslyze --regular google.com
 $ docker run -it --rm andreburgaud/sslyze
 /# sslyze --help
 /# sslyze --regular google.com
-/# sslyze --regular --tlsv1_3 tls13.cloudflare.com
+/# sslyze --tlsv1_3 tls13.cloudflare.com
 ```

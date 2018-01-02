@@ -1,10 +1,8 @@
-FROM python:3-slim-stretch
+FROM python:3.6.4-slim-stretch
 
-LABEL maintainer="andre.burgaud@gmail.com"
+ENV SSLYZE_VERSION=1.3.2
 
-ENV SSLYZE_VERSION=1.3.1
-
-LABEL python.version=3.6.3 \
+LABEL python.version=3.6.4 \
       sslyze.version=$SSLYZE_VERSION \
       maintainer="andre.burgaud@gmail.com"
 
