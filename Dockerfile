@@ -2,7 +2,7 @@ FROM python:3.6.4-slim-stretch
 
 ENV SSLYZE_VERSION=1.3.2
 
-LABEL python.version=3.6.4 \
+LABEL python.version=$PYTHON_VERSION \
       sslyze.version=$SSLYZE_VERSION \
       maintainer="andre.burgaud@gmail.com"
 
