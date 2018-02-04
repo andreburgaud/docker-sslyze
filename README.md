@@ -39,5 +39,4 @@ $ docker run -it --rm andreburgaud/sslyze sslyze --regular google.com
 $ docker run -it --rm andreburgaud/sslyze
 /# sslyze --help
 /# sslyze --regular google.com
-/# sslyze --tlsv1_3 tls13.cloudflare.com
 ```
