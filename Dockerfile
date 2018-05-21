@@ -1,6 +1,7 @@
-FROM python:3.6.4-slim-stretch
+FROM python:3.6.5-slim-stretch
 
-ENV SSLYZE_VERSION=1.4.1
+ARG SSLYZE_VERSION=1.4.2
+ENV SSLYZE_VERSION=$SSLYZE_VERSION
 
 LABEL python.version=$PYTHON_VERSION \
       sslyze.version=$SSLYZE_VERSION \
@@ -13,4 +14,8 @@ RUN apt-get update && apt-get upgrade -y && \
     apt-get purge --auto-remove -yqq $BUILD_DEPENDENCIES && \
     apt-get clean
 
-CMD "bash"
+COPY entrypoint.sh /
+
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT  ["/entrypoint.sh"]
