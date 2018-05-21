@@ -24,19 +24,19 @@ $ docker pull andreburgaud/sslyze
 # Execute SSLyze Help
 
 ```
-$ docker run -it --rm andreburgaud/sslyze sslyze --help
+$ docker run -it --rm andreburgaud/sslyze --help
 ```
 
 # Execute SSLyze against a public site
 
 ```
-$ docker run -it --rm andreburgaud/sslyze sslyze --regular google.com
+$ docker run -it --rm andreburgaud/sslyze --regular google.com
 ```
 
-# Default Image Command (Bash shell)
+# Start a Bash shell
 
 ```
-$ docker run -it --rm andreburgaud/sslyze
+$ docker run -it --rm andreburgaud/sslyze sh
 /# sslyze --help
 /# sslyze --regular google.com
 ```
