@@ -24,8 +24,8 @@ clean:
 	docker rmi `docker images -f dangling=true -q` || true
 
 github:
-	git tag -a ${TAG} -m 'Version ${TAG}'
 	git push
+	git tag -a ${TAG} -m 'Version ${TAG}'
 	git push origin --tags
 
 .PHONY: help build clean github
