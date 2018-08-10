@@ -40,3 +40,11 @@ $ docker run -it --rm andreburgaud/sslyze sh
 /# sslyze --help
 /# sslyze --regular google.com
 ```
+
+# Build a new image
+
+
+
+```
+$ IMAGE_TAG=1.4.3 make build
+```

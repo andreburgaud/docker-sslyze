@@ -1,6 +1,6 @@
-FROM python:3.6.5-slim-stretch
+FROM python:3.6.6-slim-stretch
 
-ARG SSLYZE_VERSION=1.4.2
+ARG SSLYZE_VERSION=1.4.3
 ENV SSLYZE_VERSION=$SSLYZE_VERSION
 
 LABEL python.version=$PYTHON_VERSION \
