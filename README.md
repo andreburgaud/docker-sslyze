@@ -43,8 +43,6 @@ $ docker run -it --rm andreburgaud/sslyze sh
 
 # Build a new image
 
-
-
 ```
-$ IMAGE_TAG=1.4.3 make build
+$ IMAGE_TAG=2.0.1 make build
 ```
