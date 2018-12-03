@@ -34,6 +34,12 @@ $ docker run -it --rm andreburgaud/sslyze --help
 $ docker run -it --rm andreburgaud/sslyze --regular google.com
 ```
 
+# Testing SSL 1.3
+
+```
+$ docker run -it andreburgaud/sslyze --regular tls13.crypto.mozilla.org
+```
+
 # Start a Bash shell
 
 ```
@@ -45,5 +51,5 @@ $ docker run -it --rm andreburgaud/sslyze sh
 # Build a new image
 
 ```
-$ IMAGE_TAG=2.0.1 make build
+$ IMAGE_TAG=2.0.2 make build
 ```
