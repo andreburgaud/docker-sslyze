@@ -37,7 +37,7 @@ $ docker run -it --rm andreburgaud/sslyze --regular google.com
 # Testing SSL 1.3
 
 ```
-$ docker run -it andreburgaud/sslyze --regular tls13.crypto.mozilla.org
+$ docker run -it --rm andreburgaud/sslyze --regular tls13.crypto.mozilla.org
 ```
 
 # Start a Bash shell
