@@ -1,4 +1,4 @@
-TAG:=${IMAGE_TAG}
+TAG:=2.1.4
 IMAGE:=andreburgaud/sslyze
 
 default: help

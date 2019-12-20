@@ -37,7 +37,7 @@ $ docker run -it --rm andreburgaud/sslyze --regular google.com
 # Testing SSL 1.3
 
 ```
-$ docker run -it --rm andreburgaud/sslyze --regular tls13.crypto.mozilla.org
+$ docker run -it --rm andreburgaud/sslyze --tlsv1_3 www.cloudflare.com
 ```
 
 # Start a Bash shell
@@ -50,6 +50,11 @@ $ docker run -it --rm andreburgaud/sslyze sh
 
 # Build a new image
 
+Change the SSLyze version in:
+
+1. Dockerfile
+1. Makefile
+
 ```
-$ IMAGE_TAG=2.0.6 make build
+$ make build
 ```
