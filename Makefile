@@ -9,7 +9,7 @@ help:
 	@echo 'Usage:'
 	@echo '    make clean           Delete dangling and SSLyze images'
 	@echo '    make build           Build the SSLyze image using local Dockerfile'
-	@echo '    make push            Push an existing image to Docker Hub'
+	@echo '    make github          Push commit changes and tag to Github'
 	@echo
 
 build:
