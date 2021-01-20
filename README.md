@@ -25,19 +25,19 @@ $ docker pull andreburgaud/sslyze
 # Execute SSLyze Help
 
 ```
-$ docker run -it --rm andreburgaud/sslyze --help
+$ docker run --rm andreburgaud/sslyze --help
 ```
 
 # Execute SSLyze against a public site
 
 ```
-$ docker run -it --rm andreburgaud/sslyze --regular google.com
+$ docker run --rm andreburgaud/sslyze --regular google.com
 ```
 
 # Testing SSL 1.3
 
 ```
-$ docker run -it --rm andreburgaud/sslyze --tlsv1_3 www.cloudflare.com
+$ docker run --rm andreburgaud/sslyze --tlsv1_3 www.cloudflare.com
 ```
 
 # Start a Bash shell
