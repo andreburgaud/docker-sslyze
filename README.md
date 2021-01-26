@@ -2,12 +2,11 @@
 
 Docker project holding a Dockerfile for an SSLyze container.
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/andreburgaud/sslyze.svg)](https://hub.docker.com/r/andreburgaud/sslyze/)
-[![Docker Automated Build](https://img.shields.io/docker/automated/andreburgaud/sslyze.svg)](https://hub.docker.com/r/andreburgaud/sslyze/)
-[![Docker Build Status](https://img.shields.io/docker/build/andreburgaud/sslyze.svg)](https://hub.docker.com/r/andreburgaud/sslyze/)
-[![Layers](https://images.microbadger.com/badges/image/andreburgaud/sslyze.svg)](https://microbadger.com/images/andreburgaud/sslyze)
-[![Version](https://images.microbadger.com/badges/version/andreburgaud/sslyze.svg)](https://microbadger.com/images/andreburgaud/sslyze)
-[![Tag](https://img.shields.io/github/tag/andreburgaud/docker-sslyze.svg)](https://github.com/andreburgaud/docker-sslyze/tags)
+![Docker Automated build](https://img.shields.io/docker/automated/andreburgaud/sslyze)
+[![](https://images.microbadger.com/badges/image/andreburgaud/sslyze.svg)](https://microbadger.com/images/andreburgaud/sslyze)
+[![](https://images.microbadger.com/badges/version/andreburgaud/sslyze.svg)](https://microbadger.com/images/andreburgaud/sslyze)
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/andreburgaud/sslyze/4.0.1)
+
 
 # SSLyze
 
