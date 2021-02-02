@@ -1,4 +1,4 @@
-TAG:=4.0.1
+TAG:=4.0.2
 IMAGE:=andreburgaud/sslyze
 
 default: help
