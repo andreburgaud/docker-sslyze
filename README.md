@@ -2,12 +2,6 @@
 
 Docker project holding a Dockerfile for an SSLyze container.
 
-![Docker Automated build](https://img.shields.io/docker/automated/andreburgaud/sslyze)
-[![](https://images.microbadger.com/badges/image/andreburgaud/sslyze.svg)](https://microbadger.com/images/andreburgaud/sslyze)
-[![](https://images.microbadger.com/badges/version/andreburgaud/sslyze.svg)](https://microbadger.com/images/andreburgaud/sslyze)
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/andreburgaud/sslyze/4.0.1)
-
-
 # SSLyze
 
 SSLyze is a fast and powerful SSL/TLS server scanning library. it is available
