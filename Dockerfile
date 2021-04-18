@@ -1,6 +1,6 @@
-FROM python:3.9.2-slim-buster
+FROM python:3.9.4-slim-buster
 
-ARG SSLYZE_VERSION=4.0.4
+ARG SSLYZE_VERSION=4.1.0
 ENV SSLYZE_VERSION=$SSLYZE_VERSION
 
 LABEL python.version=$PYTHON_VERSION \
