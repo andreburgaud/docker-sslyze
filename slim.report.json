@@ -1,0 +1,406 @@
+{
+  "version": "1.0",
+  "engine": "linux|Transformer|1.39.0|f502574b8d8818e86e90d902708d0e32d1acf8f7|2022-10-25_05:05:23AM",
+  "containerized": false,
+  "host_distro": {
+    "name": "Linux Mint",
+    "version": "21",
+    "display_name": "Linux Mint 21"
+  },
+  "type": "build",
+  "state": "done",
+  "target_reference": "andreburgaud/sslyze:5.0.6",
+  "system": {
+    "type": "",
+    "release": "",
+    "distro": {
+      "name": "",
+      "version": "",
+      "display_name": ""
+    }
+  },
+  "source_image": {
+    "identity": {
+      "id": "sha256:c8d8133e763c4b17e301a5cf60172b14328dba9710bc7ca85aab2acbf43bed84",
+      "tags": [
+        "5.0.6"
+      ],
+      "names": [
+        "andreburgaud/sslyze:5.0.6"
+      ]
+    },
+    "size": 230211814,
+    "size_human": "230 MB",
+    "create_time": "2022-11-08T23:49:36Z",
+    "docker_version": "20.10.12",
+    "architecture": "amd64",
+    "os": "linux",
+    "labels": {
+      "maintainer": "andre.burgaud@gmail.com",
+      "python.version": "3.10.8",
+      "sslyze.version": "5.0.6"
+    },
+    "env_vars": [
+      "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "LANG=C.UTF-8",
+      "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+      "PYTHON_VERSION=3.10.8",
+      "PYTHON_PIP_VERSION=22.2.2",
+      "PYTHON_SETUPTOOLS_VERSION=63.2.0",
+      "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/6d265be7a6b5bc4e9c5c07646aee0bf0394be03d/public/get-pip.py",
+      "PYTHON_GET_PIP_SHA256=36c6f6214694ef64cc70f4127ac0ccec668408a93825359d998fb31d24968d67",
+      "SSLYZE_VERSION=5.0.6"
+    ],
+    "container_entry": {
+      "exe_path": ""
+    }
+  },
+  "minified_image_size": 74624052,
+  "minified_image_size_human": "75 MB",
+  "minified_image": "andreburgaud/sslyze.slim",
+  "minified_image_has_data": true,
+  "minified_by": 3.0849546202610387,
+  "artifact_location": "/home/andre/AB/bin/.docker-slim-state/images/c8d8133e763c4b17e301a5cf60172b14328dba9710bc7ca85aab2acbf43bed84/artifacts",
+  "container_report_name": "creport.json",
+  "seccomp_profile_name": "andreburgaud-sslyze-seccomp.json",
+  "apparmor_profile_name": "andreburgaud-sslyze-apparmor-profile",
+  "image_stack": [
+    {
+      "is_top_image": false,
+      "id": "sha256:9dab9613e57d285bb303058b1e17e1af56a37c908589f46053f2cfbec2dc43d0",
+      "full_name": "python:3.10.8-slim-bullseye",
+      "repo_name": "python",
+      "version_tag": "3.10.8-slim-bullseye",
+      "raw_tags": [
+        "python:3.10.8-slim-bullseye"
+      ],
+      "create_time": "2022-10-25T05:31:24Z",
+      "new_size": 126145750,
+      "new_size_human": "126 MB",
+      "instructions": [
+        {
+          "type": "ADD",
+          "time": "2022-10-25T01:43:53Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 80525585,
+          "size_human": "80 MB",
+          "params": "file:8644a8156a07a656a35c41e2b2a458befb660309f8592e3efd5b43d46156cec2 in /",
+          "command_snippet": "ADD file:8644a8156a07a656a35c41e2b2a458befb6...",
+          "command_all": "ADD file:8644a8156a07a656a35c41e2b2a458befb660309f8592e3efd5b43d46156cec2 /",
+          "target": "/",
+          "source_type": "file"
+        },
+        {
+          "type": "CMD",
+          "time": "2022-10-25T01:43:53Z",
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"bash\"]\n",
+          "command_snippet": "CMD [\"bash\"]\n",
+          "command_all": "CMD [\"bash\"]\n"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-10-25T04:49:48Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "command_snippet": "ENV PATH=/usr/local/bin:/usr/local/sbin:/usr...",
+          "command_all": "ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-10-25T04:49:48Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "LANG=C.UTF-8",
+          "command_snippet": "ENV LANG=C.UTF-8",
+          "command_all": "ENV LANG=C.UTF-8"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-10-25T04:49:54Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 3117413,
+          "size_human": "3.1 MB",
+          "command_snippet": "RUN set -eux; \tapt-get update; \tapt-get inst...",
+          "command_all": "RUN set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\tnetbase \t\ttzdata \t; \trm -rf /var/lib/apt/lists/*",
+          "system_commands": [
+            "set -eux",
+            "apt-get update",
+            "apt-get install -y --no-install-recommends ca-certificates netbase tzdata",
+            "rm -rf /var/lib/apt/lists/*"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2022-10-25T04:49:54Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+          "command_snippet": "ENV GPG_KEY=A035C8C19219BA821ECEA86B64E628F8...",
+          "command_all": "ENV GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-10-25T05:20:14Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PYTHON_VERSION=3.10.8",
+          "command_snippet": "ENV PYTHON_VERSION=3.10.8",
+          "command_all": "ENV PYTHON_VERSION=3.10.8"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-10-25T05:31:10Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 30445586,
+          "size_human": "30 MB",
+          "command_snippet": "RUN set -eux; \t\tsavedAptMark=\"$(apt-mark sho...",
+          "command_all": "RUN set -eux; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tdpkg-dev \t\tgcc \t\tgnupg dirmngr \t\tlibbluetooth-dev \t\tlibbz2-dev \t\tlibc6-dev \t\tlibexpat1-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tliblzma-dev \t\tlibncursesw5-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tmake \t\ttk-dev \t\tuuid-dev \t\twget \t\txz-utils \t\tzlib1g-dev \t; \t\twget -O python.tar.xz \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\"; \twget -O python.tar.xz.asc \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\"; \tGNUPGHOME=\"$(mktemp -d)\"; export GNUPGHOME; \tgpg --batch --keyserver hkps://keys.openpgp.org --recv-keys \"$GPG_KEY\"; \tgpg --batch --verify python.tar.xz.asc python.tar.xz; \tcommand -v gpgconf > /dev/null && \\\n\tgpgconf --kill all || :; \trm -rf \"$GNUPGHOME\" python.tar.xz.asc; \tmkdir -p /usr/src/python; \ttar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; \trm python.tar.xz; \t\tcd /usr/src/python; \tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \t./configure \t\t--build=\"$gnuArch\" \t\t--enable-loadable-sqlite-extensions \t\t--enable-optimizations \t\t--enable-option-checking=fatal \t\t--enable-shared \t\t--with-lto \t\t--with-system-expat \t\t--without-ensurepip \t; \tnproc=\"$(nproc)\"; \tmake -j \"$nproc\" \t\tLDFLAGS=\"-Wl,--strip-all\" \t; \tmake install; \t\tcd /; \trm -rf /usr/src/python; \t\tfind /usr/local -depth \t\t\\( \t\t\t\\( -type d -a \\( -name test -o -name tests -o -name idle_test \\) \\) \t\t\t-o \\( -type f -a \\( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \\) \\) \t\t\\) -exec rm -rf '{}' + \t; \t\tldconfig; \t\tapt-mark auto '.*' > /dev/null; \tapt-mark manual $savedAptMark; \tfind /usr/local -type f -executable -not \\( -name '*tkinter*' \\) -exec ldd '{}' ';' \t\t| awk '/=>/ { print $(NF-1) }' \t\t| sort -u \t\t| xargs -r dpkg-query --search \t\t| cut -d: -f1 \t\t| sort -u \t\t| xargs -r apt-mark manual \t; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \trm -rf /var/lib/apt/lists/*; \t\tpython3 --version",
+          "system_commands": [
+            "set -eux; savedAptMark=\"$(apt-mark showmanual)\"; apt-get update; apt-get install -y --no-install-recommends dpkg-dev gcc gnupg dirmngr libbluetooth-dev libbz2-dev libc6-dev libexpat1-dev libffi-dev libgdbm-dev liblzma-dev libncursesw5-dev libreadline-dev libsqlite3-dev libssl-dev make tk-dev uuid-dev wget xz-utils zlib1g-dev ; wget -O python.tar.xz \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz\"; wget -O python.tar.xz.asc \"https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc\"; GNUPGHOME=\"$(mktemp -d)\"; export GNUPGHOME; gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys \"$GPG_KEY\"; gpg --batch --verify python.tar.xz.asc python.tar.xz; command -v gpgconf > /dev/null",
+            "gpgconf --kill all || :; rm -rf \"$GNUPGHOME\" python.tar.xz.asc; mkdir -p /usr/src/python; tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; rm python.tar.xz; cd /usr/src/python; gnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; ./configure --build=\"$gnuArch\" --enable-loadable-sqlite-extensions --enable-optimizations --enable-option-checking=fatal --enable-shared --with-lto --with-system-expat --without-ensurepip ; nproc=\"$(nproc)\"; make -j \"$nproc\" LDFLAGS=\"-Wl,--strip-all\" ; make install; cd /; rm -rf /usr/src/python; find /usr/local -depth ( ( -type d -a ( -name test -o -name tests -o -name idle_test ) ) -o ( -type f -a ( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' ) ) ) -exec rm -rf '{}' + ; ldconfig; apt-mark auto '.*' > /dev/null; apt-mark manual $savedAptMark; find /usr/local -type f -executable -not ( -name '*tkinter*' ) -exec ldd '{}' ';' | awk '/=>/ { print $(NF-1) }' | sort -u | xargs -r dpkg-query --search | cut -d: -f1 | sort -u | xargs -r apt-mark manual ; apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; rm -rf /var/lib/apt/lists/*; python3 --version"
+          ]
+        },
+        {
+          "type": "RUN",
+          "time": "2022-10-25T05:31:11Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 32,
+          "size_human": "32 B",
+          "command_snippet": "RUN set -eux; \tfor src in idle3 pydoc3 pytho...",
+          "command_all": "RUN set -eux; \tfor src in idle3 pydoc3 python3 python3-config; do \t\tdst=\"$(echo \"$src\" | tr -d 3)\"; \t\t[ -s \"/usr/local/bin/$src\" ]; \t\t[ ! -e \"/usr/local/bin/$dst\" ]; \t\tln -svT \"$src\" \"/usr/local/bin/$dst\"; \tdone",
+          "system_commands": [
+            "set -eux",
+            "for src in idle3 pydoc3 python3 python3-config",
+            "do dst=\"$(echo \"$src\" | tr -d 3)\"",
+            "[ -s \"/usr/local/bin/$src\" ]",
+            "[ ! -e \"/usr/local/bin/$dst\" ]",
+            "ln -svT \"$src\" \"/usr/local/bin/$dst\"",
+            "done"
+          ]
+        },
+        {
+          "type": "ENV",
+          "time": "2022-10-25T05:31:11Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PYTHON_PIP_VERSION=22.2.2",
+          "command_snippet": "ENV PYTHON_PIP_VERSION=22.2.2",
+          "command_all": "ENV PYTHON_PIP_VERSION=22.2.2"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-10-25T05:31:11Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PYTHON_SETUPTOOLS_VERSION=63.2.0",
+          "command_snippet": "ENV PYTHON_SETUPTOOLS_VERSION=63.2.0",
+          "command_all": "ENV PYTHON_SETUPTOOLS_VERSION=63.2.0"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-10-25T05:31:12Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/6d265be7a6b5bc4e9c5c07646aee0bf0394be03d/public/get-pip.py",
+          "command_snippet": "ENV PYTHON_GET_PIP_URL=https://github.com/py...",
+          "command_all": "ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/6d265be7a6b5bc4e9c5c07646aee0bf0394be03d/public/get-pip.py"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-10-25T05:31:12Z",
+          "is_nop": true,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 0,
+          "params": "PYTHON_GET_PIP_SHA256=36c6f6214694ef64cc70f4127ac0ccec668408a93825359d998fb31d24968d67",
+          "command_snippet": "ENV PYTHON_GET_PIP_SHA256=36c6f6214694ef64cc...",
+          "command_all": "ENV PYTHON_GET_PIP_SHA256=36c6f6214694ef64cc70f4127ac0ccec668408a93825359d998fb31d24968d67"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-10-25T05:31:23Z",
+          "is_nop": false,
+          "local_image_exists": false,
+          "layer_index": 0,
+          "size": 12057134,
+          "size_human": "12 MB",
+          "command_snippet": "RUN set -eux; \t\tsavedAptMark=\"$(apt-mark sho...",
+          "command_all": "RUN set -eux; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get update; \tapt-get install -y --no-install-recommends wget; \t\twget -O get-pip.py \"$PYTHON_GET_PIP_URL\"; \techo \"$PYTHON_GET_PIP_SHA256 *get-pip.py\" | sha256sum -c -; \t\tapt-mark auto '.*' > /dev/null; \t[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark > /dev/null; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \trm -rf /var/lib/apt/lists/*; \t\texport PYTHONDONTWRITEBYTECODE=1; \t\tpython get-pip.py \t\t--disable-pip-version-check \t\t--no-cache-dir \t\t--no-compile \t\t\"pip==$PYTHON_PIP_VERSION\" \t\t\"setuptools==$PYTHON_SETUPTOOLS_VERSION\" \t; \trm -f get-pip.py; \t\tpip --version",
+          "system_commands": [
+            "set -eux",
+            "savedAptMark=\"$(apt-mark showmanual)\"",
+            "apt-get update",
+            "apt-get install -y --no-install-recommends wget",
+            "wget -O get-pip.py \"$PYTHON_GET_PIP_URL\"",
+            "echo \"$PYTHON_GET_PIP_SHA256 *get-pip.py\" | sha256sum -c -",
+            "apt-mark auto '.*' > /dev/null",
+            "[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark > /dev/null",
+            "apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false",
+            "rm -rf /var/lib/apt/lists/*",
+            "export PYTHONDONTWRITEBYTECODE=1",
+            "python get-pip.py --disable-pip-version-check --no-cache-dir --no-compile \"pip==$PYTHON_PIP_VERSION\" \"setuptools==$PYTHON_SETUPTOOLS_VERSION\"",
+            "rm -f get-pip.py",
+            "pip --version"
+          ]
+        },
+        {
+          "type": "CMD",
+          "time": "2022-10-25T05:31:24Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"python3\"]\n",
+          "command_snippet": "CMD [\"python3\"]\n",
+          "command_all": "CMD [\"python3\"]\n",
+          "raw_tags": [
+            "python:3.10.8-slim-bullseye"
+          ]
+        }
+      ]
+    },
+    {
+      "is_top_image": true,
+      "id": "sha256:c8d8133e763c4b17e301a5cf60172b14328dba9710bc7ca85aab2acbf43bed84",
+      "full_name": "andreburgaud/sslyze:5.0.6",
+      "repo_name": "andreburgaud/sslyze",
+      "version_tag": "5.0.6",
+      "raw_tags": [
+        "andreburgaud/sslyze:5.0.6"
+      ],
+      "create_time": "2022-11-08T23:49:36Z",
+      "new_size": 104066064,
+      "new_size_human": "104 MB",
+      "base_image_id": "sha256:9dab9613e57d285bb303058b1e17e1af56a37c908589f46053f2cfbec2dc43d0",
+      "instructions": [
+        {
+          "type": "ARG",
+          "time": "2022-11-08T23:49:27Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:ae178e194c6fa409c88972ae14030a679d7c16267ce00f7f49e4104ed5c987fa",
+          "layer_index": 0,
+          "size": 0,
+          "params": "SSLYZE_VERSION=5.0.6",
+          "command_snippet": "ARG SSLYZE_VERSION=5.0.6",
+          "command_all": "ARG SSLYZE_VERSION=5.0.6"
+        },
+        {
+          "type": "ENV",
+          "time": "2022-11-08T23:49:27Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:794f29969dd8f9782534c7d8368e450307a02b9ab5033ea576aeb15f7ec96c99",
+          "layer_index": 0,
+          "size": 0,
+          "params": "SSLYZE_VERSION=5.0.6",
+          "command_snippet": "ENV SSLYZE_VERSION=5.0.6",
+          "command_all": "ENV SSLYZE_VERSION=5.0.6"
+        },
+        {
+          "type": "LABEL",
+          "time": "2022-11-08T23:49:27Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:26ca8814f48b0a175d29e93af59a1175a5fd7f0b3f6d750ef13e257862326206",
+          "layer_index": 0,
+          "size": 0,
+          "params": "python.version=3.10.8 sslyze.version=5.0.6 maintainer=andre.burgaud@gmail.com",
+          "command_snippet": "LABEL python.version=3.10.8 sslyze.version=5...",
+          "command_all": "LABEL python.version=3.10.8 sslyze.version=5.0.6 maintainer=andre.burgaud@gmail.com"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-11-08T23:49:35Z",
+          "is_nop": false,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:0c7aa6fc7dacac365d5fc13e81c2f218976ccddcec4a148741484e6a4f50ecb0",
+          "layer_index": 0,
+          "size": 104065394,
+          "size_human": "104 MB",
+          "command_snippet": "RUN pip install sslyze==$SSLYZE_VERSION",
+          "command_all": "RUN pip install sslyze==$SSLYZE_VERSION",
+          "system_commands": [
+            "pip install sslyze==$SSLYZE_VERSION"
+          ]
+        },
+        {
+          "type": "COPY",
+          "time": "2022-11-08T23:49:35Z",
+          "is_nop": true,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:3815d36d825422541bec2398ce7a7f98989ad929756e58e4a93712e28b79bc2e",
+          "layer_index": 0,
+          "size": 335,
+          "size_human": "335 B",
+          "params": "file:264db8e57dd1179ddd80df7f32e4d32bb69c0f6952b2c05882a043a26c7ff877 in /",
+          "command_snippet": "COPY file:264db8e57dd1179ddd80df7f32e4d32bb6...",
+          "command_all": "COPY file:264db8e57dd1179ddd80df7f32e4d32bb69c0f6952b2c05882a043a26c7ff877 /",
+          "target": "/",
+          "source_type": "file"
+        },
+        {
+          "type": "RUN",
+          "time": "2022-11-08T23:49:36Z",
+          "is_nop": false,
+          "local_image_exists": true,
+          "intermediate_image_id": "sha256:750d55e94ddb3d63530e5b7319ade22995750a1e2e401f2c5b3bf7c1101e32ee",
+          "layer_index": 0,
+          "size": 335,
+          "size_human": "335 B",
+          "command_snippet": "RUN chmod +x /entrypoint.sh",
+          "command_all": "RUN chmod +x /entrypoint.sh",
+          "system_commands": [
+            "chmod +x /entrypoint.sh"
+          ]
+        },
+        {
+          "type": "ENTRYPOINT",
+          "time": "2022-11-08T23:49:36Z",
+          "is_last_instruction": true,
+          "is_nop": true,
+          "is_exec_form": true,
+          "local_image_exists": true,
+          "layer_index": 0,
+          "size": 0,
+          "params": "[\"/entrypoint.sh\"]\n",
+          "command_snippet": "ENTRYPOINT [\"/entrypoint.sh\"]\n",
+          "command_all": "ENTRYPOINT [\"/entrypoint.sh\"]\n",
+          "raw_tags": [
+            "andreburgaud/sslyze:5.0.6"
+          ]
+        }
+      ]
+    }
+  ]
+}

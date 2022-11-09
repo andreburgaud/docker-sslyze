@@ -2,7 +2,6 @@
 set -e
 
 help() {
-    sslyze --version
     sslyze --help
 }
 

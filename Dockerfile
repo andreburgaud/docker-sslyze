@@ -1,6 +1,6 @@
-FROM python:3.9.9-slim-bullseye
+FROM python:3.10.8-slim-bullseye
 
-ARG SSLYZE_VERSION=5.0.0
+ARG SSLYZE_VERSION=5.0.6
 ENV SSLYZE_VERSION=$SSLYZE_VERSION
 
 LABEL python.version=$PYTHON_VERSION \

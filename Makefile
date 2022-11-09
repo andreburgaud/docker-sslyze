@@ -1,4 +1,4 @@
-TAG:=5.0.0
+TAG:=5.0.6
 IMAGE:=andreburgaud/sslyze
 
 default: help
@@ -13,7 +13,7 @@ help:
 	@echo
 
 build:
-	DOCKER_BUILDKIT=1 docker build --build-arg SSLYZE_VERSION=${TAG} -t ${IMAGE}:${TAG} .
+	docker build --build-arg SSLYZE_VERSION=${TAG} -t ${IMAGE}:${TAG} .
 
 clean:
 	# Remove containers with exited status:
